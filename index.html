@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corse registration from</title>
+    <style>
+        body{
+            color: aliceblue;
+            background: rgb(0, 0,0);
+            background: radial-gradient(circle,rgb(113,44,239)0%,rgb(15,159,94)100%)
+        }
+        fieldset{
+            width: 400px;
+            border: 5px solid rgb(128, 0, 47);
+            border-radius: 25px;
+        }
+        input{
+            border: 2px solid red;
+
+        }
+         select{
+            background-color: black;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 200px;
+            color: hsl(90, 50%, 45%);
+            cursor: pointer;
+         }
+         input[type="radio"]:checked{
+            height: 40px;
+            width: 40px;
+         }
+         input[type="radio"]:checked+label{
+            color: lime;
+            font-size: 20px;
+         }
+         h1 {
+            
+            color: hsl(73, 86%, 57%);
+
+         }
+         legend{
+            color:rgb(79, 11, 100);
+        
+         }
+        
+    
+         input[type]{
+            color: black;
+         }
+         label{
+            color: rgb(18, 30, 77);
+         }
+         textarea{
+            color: black; 
+            background:whitesmoke;
+         }
+
+        
+    </style>
+
+    </head> 
+<body>
+<h1> course registration from</h1>
+   <form >
+    
+    <fieldset><legend> Personal details</legend>
+         <table>
+        <tr>
+            <td> <label for="">Name</label></td>
+            <td> <input type="text"placeholder="ex:Bikash"></td> 
+        </tr>
+        <tr>
+            <td> <label for="">sure Name</label></td>
+            <td> <input type="text"placeholder="ex:kumar"></td>
+        </tr>
+        <tr>
+            <td> <label for="">Mobail number</label></td>
+            <td> <input type="tel"placeholder="ex:"6372920315></td>
+        </tr>
+        <tr>
+            <td> <label for="">Email</label></td>
+            <td><input type="email"placeholder="ex:bikash6372830315@gmail.com"></td>
+        </tr>
+        <tr>
+            <td> <label for="">password</label></td>
+            <td> <input type="password"></td>
+        </tr>
+        <tr>
+            <td> <label for="">confrom password</label></td>
+            <td> <input type="password"></td>
+        </tr>
+        <tr>
+            <td> <label for="">DOB</label></td>
+            <td> <input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td> 
+                <input type="radio"name="Gender"value="m">
+                <label>mail</label>
+                <input type="radio"name="Gender"value="f">
+                <label> femail</label>
+                <input type="radio"name="Gender"value="o">
+                <label>other</label>
+            </td>
+            <br>
+        </tr>
+        <tr>
+            <td> <label for="">country</label></td>
+            <td> <select>
+                <option value="">INDIA</option>
+                <option value="">USA</option>
+                <option value="">UK</option>
+                <option value="">JAPAN</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td> <label for="">upload image</label></td>
+            <td> <input type="file"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+     </fieldset> 
+
+    <fieldset>
+        <legend>course details</legend>
+        <legend>select course</legend>
+        <select name="course">
+            <option value="jfc">java full stack</option>
+            <option value="pfc">python full stack</option>
+            <option value="cj">core java</option>
+            <option value="js">java script</option>
+            <option value="ds">data strucher</option> 
+        </select>
+        <br>
+        <label>delevery mode</label>
+        <input type="checkbox"name="mode1"value="on">online
+        <input type="checkbox"name="mode2"value="off">offline
+        <br>
+        <label>coments</label>
+        <textarea rows="r"coloms="40"></textarea>
+    </fieldset>
+    <input type="submit"name=""id="">
+   </form>
+</body>
+</html>
